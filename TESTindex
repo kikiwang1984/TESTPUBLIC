@@ -1,0 +1,11 @@
+import plotly.graph_objects as go
+
+# Define your hierarchical data
+labels = ["Root", "Child 1", "Child 2", "Grandchild 1", "Grandchild 2", "Grandchild 3"]
+parents = ["", "Root", "Root", "Child 1", "Child 1", "Child 2"]
+
+# Create the sunburst chart
+fig = go.Figure(go.Sunburst(labels=labels, parents=parents))
+
+# Show the chart
+fig.show()
